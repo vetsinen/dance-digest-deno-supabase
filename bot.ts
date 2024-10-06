@@ -9,7 +9,7 @@ if (!botToken) {
 }
 console.log("Your bot token is:", botToken);
 
-const bot = new Bot(botToken);// <-- put your bot token between the "" (https://t.me/BotFather)
+export const bot = new Bot(botToken);// <-- put your bot token between the "" (https://t.me/BotFather)
 
 bot.command("start", (ctx) => {
      bot.api.sendMessage(ctx.message.chat.id,"Hello! I'm Merengueros bot.")
@@ -20,4 +20,5 @@ bot.command("digest", async (ctx) => {
      bot.api.sendMessage(ctx.message.chat.id,html,{ parse_mode: "HTML" })
 });
 // bot.on("message", (ctx) => ctx.reply("start for deno tgbot!"));
-bot.start();
+
+//await bot.start();

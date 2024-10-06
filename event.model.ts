@@ -33,4 +33,4 @@ export async function events(city='Київ'):Promise<Event[]>{
     }
 }
 
-const data: Event[] | null = await events(); console.log(data)
+// const data: Event[] | null = await events(); console.log(data)

@@ -1,6 +1,14 @@
 {
   "tasks": {
-    "start": "deno run --watch --allow-env --allow-read --allow-net bot.ts"
+    "start": "deno run --watch --allow-env --allow-read --allow-net main.ts"
   },
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "deploy": {
+    "project": "a8636b09-0dba-4b28-8b0f-527ea3e69f9c",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "main.ts"
+  }
 }

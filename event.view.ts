@@ -25,4 +25,4 @@ export function renderHtmlForTelegram(events: object[]): string {
 //     { id: 12, event_brief: "Event One", event_date: "2024-10-01" },
 //     { id: 3, event_brief: "Event Two", event_date: "2024-11-15" }
 // ];
-const eventsHtml = renderHtmlForTelegram(await events()); console.log(eventsHtml);
+// const eventsHtml = renderHtmlForTelegram(await events()); console.log(eventsHtml);
